@@ -18,7 +18,7 @@ import java.util.*;
 
 public class ManipClass {
 
-    /* use for reflection methods */
+   /* use for reflection methods */
 
     public static String capitalize(String str) {
         if (str == null) {
