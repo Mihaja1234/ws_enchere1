@@ -6,9 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "Enchere.controllerVIEW")
+@ComponentScan(basePackages = "Enchere.controllerAPI")
 public class Datasyncv1Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Datasyncv1Application.class, args);
     }
 }
+
