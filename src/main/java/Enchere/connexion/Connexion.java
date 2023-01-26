@@ -12,7 +12,7 @@ public class Connexion
         try
         {
             Class.forName("org.postgresql.Driver");
-            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-96.railway.app:5862/railway", "postgres", "cEfbRTpJZVYdGWEmQgFb");
+            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-109.railway.app:5521/railway", "postgres", "Zy8rpCw4ATZ7PBYbFaUq");
             this.stat= this.con.createStatement();
 //  			this.res=stat.executeQuery(req);
             stat.execute(req);
@@ -35,7 +35,7 @@ public class Connexion
     {
         try {
             Class.forName("org.postgresql.Driver");
-            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-96.railway.app:5862/railway", "postgres", "cEfbRTpJZVYdGWEmQgFb");
+            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-109.railway.app:5521/railway", "postgres", "Zy8rpCw4ATZ7PBYbFaUq");
         } catch (Exception e) {
         } finally {
         }
@@ -47,7 +47,7 @@ public class Connexion
         try
         {
             Class.forName("org.postgresql.Driver");
-            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-96.railway.app:5862/railway", "postgres", "cEfbRTpJZVYdGWEmQgFb");
+            this.con = DriverManager.getConnection("jdbc:postgresql://containers-us-west-109.railway.app:5521/railway", "postgres", "Zy8rpCw4ATZ7PBYbFaUq");
             this.stat= this.con.createStatement();
             this.res=stat.executeQuery(req);
             //	stat.execute(req);

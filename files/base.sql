@@ -64,11 +64,11 @@ status int default 0
 ---histo encherisseur --
 
 
-SELECT e.description, e.prixMinimumVente, e.durreEnchere, e.DateHeureEnchere, ho.montant_offre, ho.DateHeureMise, p.nomProduit, p.description, cp.typeCategorie FROM Utilisateur u JOIN HistoriqueOffre ho using(idUtilisateur) JOIN Enchere e using(idEnchere) JOIN Produit_Enchere pe  using(idEnchere) JOIN Produit p using(idProduit) JOIN CategorieProduit cp using(idCategorieProduit) WHERE u.idUtilisateur = 1 ORDER BY ho.DateHeureMise DESC;
+-- SELECT e.description, e.prixMinimumVente, e.durreEnchere, e.DateHeureEnchere, ho.montant_offre, ho.DateHeureMise, p.nomProduit, p.description, cp.typeCategorie FROM Utilisateur u JOIN HistoriqueOffre ho using(idUtilisateur) JOIN Enchere e using(idEnchere) JOIN Produit_Enchere pe  using(idEnchere) JOIN Produit p using(idProduit) JOIN CategorieProduit cp using(idCategorieProduit) WHERE u.idUtilisateur = 1 ORDER BY ho.DateHeureMise DESC;
 
 ---histovendeur---
 
-SELECT e.description, e.prixMinimumVente, e.durreEnchere, e.DateHeureEnchere, p.nomProduit, p.description, cp.typeCategorie, re.prix_gagnant,u2.nom, u2.prenom, u2.email FROM Utilisateur u JOIN Enchere e using(idUtilisateur) JOIN Produit_Enchere pe using(idEnchere) JOIN Produit p using(idProduit) JOIN CategorieProduit cp using(idCategorieProduit) LEFT JOIN ResultatEnchere re using(idEnchere) LEFT JOIN Utilisateur u2 ON u2.idUtilisateur = re.idUtilisateur WHERE u.idUtilisateur = 1 ORDER BY e.DateHeureEnchere DESC;
+-- SELECT e.description, e.prixMinimumVente, e.durreEnchere, e.DateHeureEnchere, p.nomProduit, p.description, cp.typeCategorie, re.prix_gagnant,u2.nom, u2.prenom, u2.email FROM Utilisateur u JOIN Enchere e using(idUtilisateur) JOIN Produit_Enchere pe using(idEnchere) JOIN Produit p using(idProduit) JOIN CategorieProduit cp using(idCategorieProduit) LEFT JOIN ResultatEnchere re using(idEnchere) LEFT JOIN Utilisateur u2 ON u2.idUtilisateur = re.idUtilisateur WHERE u.idUtilisateur = 1 ORDER BY e.DateHeureEnchere DESC;
 
 
 
