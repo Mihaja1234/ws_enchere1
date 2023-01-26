@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/utilisateur")
-public class UtilisateurController {
+public class UtilisateurController2 {
 
     @GetMapping("/")
     public String IndexUtilisateur(Model model) {
