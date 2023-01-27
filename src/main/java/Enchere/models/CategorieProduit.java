@@ -35,6 +35,7 @@ public class CategorieProduit extends Mere {
     public void NewCategorie(Connexion con) throws Exception
     {
         String requete="insert into categorieproduit(typecategorie) values ('"+this.getTypeCategorie()+"')";
+        System.out.println(requete);
         con = new Connexion(requete);
         con.getResultset();
     }

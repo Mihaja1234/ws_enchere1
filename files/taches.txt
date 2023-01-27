@@ -1,0 +1,67 @@
+BACK OFFICE
+login
+	creation fonction login
+		creation de la classe Admin
+		creation de la classe Token
+		verification email & mot de passe
+		utilisation token
+	creation login_admin.jsp
+		
+	creation table administrateur, token_administrateur
+
+
+gestion element necessaire
+	insertion d'une nouvelle categorie
+		Creation de la classe Categorie
+		creation fonction insertion Categorie
+		Lister les categorie existant
+		Creation de la table Categorie
+		page jsp pour inserer et lister les categories
+
+	limiter la duree des encheres
+		Classe+page+table
+		
+tableau statistique
+	statistique sur les revenus journalier
+	statistique sur les encheres les plus encheris(prix ou encherisseur)
+	statistique selon
+		les categories 
+		la date (quel jour les utilisateurs encherissent le plus)
+		les utilisateurs fideles
+	creation d'un tableau de bordn
+	creation de la table enchere
+	creation des views pour les statistiques
+
+validation du rechargement de compte
+	liste des demandes de rechargement
+	creation de la table rechargement
+	creation de la table rechargement valider
+	creation de la table rechargement non accorde
+	
+
+
+FRONT OFFICE
+Voir liste des encheres(Sans Login)
+	liste des encheres les plus recents
+	liste de tous les encheres non terminee
+	creation de la page ionic
+	creation de la base enchere
+	
+Rencherir(avec login)
+	verification si le montant est superieur
+	verification si le delai est termine
+	
+Recherche 
+Historique de ses propres recherches
+	creation de la fonction recherche avance
+	creation des requetes
+	creation de la page jsp
+
+
+MOBILE
+Inscription et Connexion
+Ajouter une enchere
+	ajouter une ou plusieur photo
+Voir liste des encheres et status
+Notification quand l'enchere est terminee
+Rechargement de compte
